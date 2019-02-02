@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+
+    tools:context="com.example.student.sqlitedemo1.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Enter Contact Name "
+        android:layout_alignBaseline="@+id/editextname"
+        android:layout_alignBottom="@+id/editextname"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editextname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:inputType="textPersonName"
+      />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Enter contact no "
+        android:layout_below="@+id/textView"
+
+        android:layout_alignLeft="@+id/textView"
+   />
+
+    <EditText
+        android:id="@+id/edittextphnno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/editextname"
+        android:layout_below="@+id/editextname"
+        android:ems="10"
+        android:maxLength="10"
+        android:inputType="number"
+ />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextphnno"
+       android:padding="5dp"
+        android:text="Add to database"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/btnshow"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edittextphnno"
+        android:layout_alignTop="@+id/btnadd"
+        android:layout_marginStart="57dp"
+        android:textColor="#FFF"
+        android:text="Show All Contacts" />
+</RelativeLayout>

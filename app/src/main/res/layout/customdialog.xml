@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customborder"
+    android:gravity="center"
+    >
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Phone number "
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/edtphnno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="10"
+        />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+</LinearLayout>
